@@ -1,0 +1,26 @@
+.container {
+    align-items: center;
+    padding: 2px 10px;
+}
+
+.card {
+    width: 30%;
+    margin: 5px 5px 2px 2px;
+    display: inline-block;
+    flex-direction: column;
+    border: 2px rgba(224, 180, 180, 0.559) solid;
+}
+
+.header {
+    background: rgb(232, 10, 10);
+    color: white;
+    text-align: center;
+}
+
+.header div p {
+    color: white;
+}
+
+.wrap-text {
+    text-overflow: clip;
+}

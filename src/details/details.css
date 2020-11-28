@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    text-align: left;
+    overflow: hidden;
+    background-color: white;
+}
+
+table td,
+table th {
+    border-top: 1px solid #ECF0F1;
+    padding: 10px;
+}
+
+table td {
+    border-left: 1px solid #ECF0F1;
+    border-right: 1px solid #ECF0F1;
+}
+
+table th {
+    background-color: #4ECDC4;
+}
+
+table tr:nth-of-type(even) td {
+    background-color: #5fece29b;
+}
+
+
+/* tr:nth-child(even) {
+    background-color: #dddddd;
+} */
