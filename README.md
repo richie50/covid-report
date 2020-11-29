@@ -1,7 +1,10 @@
-# Getting Started with Create React App
+# Project Information
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A browser-based application that lists the 10 countries with the most case of COVID-19. The application should also have a way to access details for each of these countries.
+This program uses an open API that provides real time updates to the current COVID-19 Cases by country. The web bases showcases my ability to adapt to new frameworks easily. 
+React materail UI library was used since it complies with the WCAG (acessiblity). 
 
+**Note: This is my first ReactJs project ever**
 ## Available Scripts
 
 In the project directory, you can run:
@@ -27,8 +30,6 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
 ### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
@@ -39,8 +40,7 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## ISSUES
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Every current node-sass version I used in this app wasn't able to compile my scss. So I stuck to css. This is something I will look into with the open source community.

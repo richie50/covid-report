@@ -48,7 +48,6 @@ class CountryDetails extends Component<Props, State> {
 
             };
         });
-        console.log(data);
         this.setState({ stats: data });
       });
   }
@@ -58,16 +57,15 @@ class CountryDetails extends Component<Props, State> {
       this.state.stats.length > 0
         ? Object.keys(this.state.stats[0]).map((r) => r.toUpperCase())
         : [];
-    console.log(headers);
     return (
       <table>
           <caption>
-              <h2 className="table-header">Details of Countries with the highest number of COVID Cases</h2>
+              <h2 id="table-header" className="table-header">Details of Countries with the highest number of COVID Cases</h2>
             </caption>
           <thead>
           <tr>
             {headers.map((header) => {
-                return <th key={header}>{header}</th>;
+                return <th scope="col" key={header}>{header}</th>;
             })}
              </tr>
           </thead>

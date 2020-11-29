@@ -25,7 +25,7 @@ class  HomeComponent extends Component{
     }
 
     componentDidMount() {
-        const header = new Headers({"x-access-token":"5cf9dfd5-3449-485e-b5ae-70a60e997864" , "Content-Type":"application/json"});
+        const header = new Headers({"x-access-token":"5cf9dfd5-3449-485e-b5ae-70a60e997864" , "Content-Type":"application/json"}); // as specified by the API
         fetch('https://api.covid19api.com/summary' , {method: 'GET' , headers: header} ).then(res => res.json()).then((data)=> {
             this.setState({totals: data.Countries})
         }).catch(console.log);
@@ -36,7 +36,6 @@ class  HomeComponent extends Component{
         return(
             <div>
                 {this.highestDailyCases().map((e , idx) => {
-                    console.log(e)
                     return(  
                     
                         <Card className="card" key={idx} variant="elevation">
@@ -60,6 +59,9 @@ class  HomeComponent extends Component{
         );
     }
 
+    /**
+     * The routine computes the country with the highest number of cases in descending order and returns the top ten countries with the most cases
+     */
     public highestDailyCases(){
         const highestCases = _.orderBy(this.state.totals, ['TotalConfirmed'], ['desc']).splice(0 , 9);
         return highestCases;

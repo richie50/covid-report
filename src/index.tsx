@@ -1,8 +1,6 @@
 import './index.css';
 
 import App from './App';
-import CountryDetails from './details/detail.component';
-import CovidTotalsComponent from './home/home.component';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
